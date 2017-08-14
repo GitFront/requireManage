@@ -52,4 +52,8 @@
     //studyit.com/index.php/index
     //studyit.com/index.php
     //studyit.com
+    //studyit.com/views/dashboard/index
+    // studyit.com/dashboard/index
+    //studyit.com/index
+
 ?>

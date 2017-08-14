@@ -48,6 +48,15 @@
                   data:data,
                   success:function (result){
                      alert('登陆成功...');
+//                     var info = result.result;
+//                     console.log(info);
+//                     console.log(typeof info);
+//                     // JSON.stringify() 是将对象转换成字符串
+//                     var infoStr = JSON.stringify(info);// 把对象转换成字符串的形式
+//                    console.log(infoStr);
+//                    console.log(typeof infoStr);
+//                     $.cookie('tcInfo',infoStr);
+                     $.cookie('tcInfo',JSON.stringify(result.result));
                         location.href = '/' ;// 登陆成功之后要跳转到主页面
                   },
                   error:function (errInfo){

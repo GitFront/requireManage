@@ -12,3 +12,11 @@
 	///views/dashboard/login
 		 window.location.href= '/login';
 	}
+
+	// 判断  因为login页面是没有侧边栏和顶部的  因此需要排队掉首页面
+
+ 	if(location.pathname!='/login'&&location.pathname!='/dashboard/login'&&location.pathname!='/views/dashboard/login'){
+    var html = template('tpl_profile',JSON.parse($.cookie('tcInfo')));
+    $('.aside>.profile').html(html);
+	}
+

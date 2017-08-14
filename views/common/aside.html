@@ -2,10 +2,7 @@
   <!-- 个人资料 -->
   <div class="profile">
     <!-- 头像 -->
-    <div class="avatar img-circle">
-      <img src="/views/public/uploads/avatar.jpg">
-    </div>
-    <h4>布头儿</h4>
+
   </div>
   <!-- 导航菜单 -->
   <div class="navs">
@@ -85,3 +82,16 @@
     </ul>
   </div>
 </div>
+<script type="template/html" id="tpl_profile">
+  <div class="avatar img-circle">
+    <img src="{{tc_avatar}}">
+  </div>
+  <h4>{{tc_name}}</h4>
+</script>
+<!--<script>-->
+  <!--//  var tcInfo = $.cookie('tcInfo');-->
+  <!--//  tcInfo = JSON.parse(tcInfo);-->
+  <!--//  var html = template('tpl_aside',tcInfo);-->
+  <!--var html = template('tpl_profile',JSON.parse($.cookie('tcInfo')));-->
+  <!--$('.profile').html(html);-->
+<!--</script>-->

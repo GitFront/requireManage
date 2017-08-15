@@ -20,4 +20,3 @@ require.config({
   }
 });
 require(['common']);
-require(['js/dashboard/common']);

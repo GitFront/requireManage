@@ -31,6 +31,11 @@
                location.href='/login';
              }
            })
-    })
+    });
+    // 侧边栏的交互功能
+     $('.navs a+ul').prev().on('click',function (){
+          // 这是给a标签注册的事件
+       $(this).next().slideToggle();
+     })
 	})
 

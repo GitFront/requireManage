@@ -106,7 +106,7 @@
         <tr>
             <td colspan="7">
                 <div class="introduce">
-                    {{tc_introduce}}
+                    {{#tc_introduce}}
                 </div>
             </td>
         </tr>
@@ -130,9 +130,9 @@
                 <a href="#teacherModal"   class="check-info btn btn-info btn-xs">查 看</a>
                 <a href="./teacher_add.html" class="btn btn-info btn-xs">编 辑</a>
                 {{if value.tc_status==0}}
-                <a href="javascript:;" data-status="{{value.tc_status}}" class="btn btn-warning btn-xs">注 销</a>
+                <a href="javascript:;" data-status="{{value.tc_status}}" class="btnHandle btn btn-warning btn-xs">注 销</a>
                 {{else}}
-                <a href="javascript:;" data-status="{{value.tc_status}}" class="btn btn-warning btn-xs">启 用</a>
+                <a href="javascript:;" data-status="{{value.tc_status}}" class="btnHandle btn btn-warning btn-xs">启 用</a>
                 {{/if}}
             </td>
         </tr>

@@ -3,6 +3,7 @@
  */
 define(['jquery', 'template','bootstrap'], function ($, template) {
   // 首先去后台请求数据库，加载当前页面
+  // 显示所有的讲师信息
   $.ajax({
     url: '/api/teacher',
     type: 'get',
@@ -18,6 +19,7 @@ define(['jquery', 'template','bootstrap'], function ($, template) {
   // $('#tc_info').on('click',function (){
   //        alert(123);
   // })
+  //查看讲师信息
   $('#tc_list').on('click', 'a.check-info', function () {
     alert(123);
     var id = $(this).parent().attr('data-id');
@@ -38,4 +40,31 @@ define(['jquery', 'template','bootstrap'], function ($, template) {
       }
     })
   })
+
+  // 按钮的注销和启用功能
+  $('#tc_list').on('click','a.btnHandle',function (){
+    var _this = $(this);  // 将当前对象 先存起来
+    $.ajax({
+      url:'/api/teacher/handle',
+      type:'post',
+      data:{
+        tc_id: $(this).parent().attr('data-id'),
+        tc_status:$(this).data('status')
+      },
+      success:function (res){
+        if(res.code==200){
+          if(res.result.tc_status==1){
+            // 如果返回来的数据是1的话，表示当前按钮的状态是注销的状态，显示的文字是启用
+            _this.text('启 用');  // 因为此处是回调函数，不能直接使用this，得使用之前存起来的对象
+          } else {
+            _this.text('注 销');
+          }
+          _this.attr('data-status',res.result.tc_status); //将返回来的状态值，重新赋值给按钮的data-status属性
+          // 如果更新此属性的话，则此按钮无法正常切换
+        }
+
+      }
+    })
+  })
+
 })

@@ -4,25 +4,5 @@
 <!--<script src="/views/public/assets/artTemplate/template.js"></script>-->
 <!--<script src="/views/public/assets/nprogress/nprogress.js"></script>-->
 <!--<script src="/views/public/js/common.js"></script>-->
-<script src="/views/public/assets/requireJS/require.js"></script>
-<script>
-  require.config({
-    baseUrl: '/views/public',
-    paths: {
-      'jquery': 'assets/jquery/jquery',
-      'cookie': 'assets/jquery-cookie/jquery.cookie',
-      'bootstrap': 'assets/bootstrap/js/bootstrap.min',
-      'template': 'assets/artTemplate/template',
-      'nprogress': 'assets/nprogress/nprogress',
-//      'common': 'js/common'
-      'common':'js/dashboard/common',
-      'login':'js/dashboard/login'
-    },
-    shim: {
-      bootstrap:{
-        deps:['jquery']
-      }
-    }
-  });
-  require(['common']);  // 调用 common模块
-</script>
+<script src="/views/public/libs/require.js"></script>
+<script src="/views/public/libs/config.js"></script>

@@ -128,7 +128,7 @@
             <td>{{value.tc_cellphone}}</td>
             <td data-id ="{{value.tc_id}}">
                 <a href="#teacherModal"   class="check-info btn btn-info btn-xs">查 看</a>
-                <a href="./teacher_add.html" class="btn btn-info btn-xs">编 辑</a>
+                <a href="/teacher/manager?tc_id={{value.tc_id}}" class="btn btn-info btn-xs">编 辑</a>
                 {{if value.tc_status==0}}
                 <a href="javascript:;" data-status="{{value.tc_status}}" class="btnHandle btn btn-warning btn-xs">注 销</a>
                 {{else}}

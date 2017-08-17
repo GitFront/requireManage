@@ -12,6 +12,7 @@ require.config({
     'form': 'assets/jquery-form/jquery.form',
 'datepicker':'assets/bootstrap-datepicker/js/bootstrap-datepicker',
 'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+'uploadify':'assets/uploadify/jquery.uploadify',
 //      'common': 'js/common'
     'common': 'js/dashboard/common',
     'login': 'js/dashboard/login'
@@ -21,6 +22,9 @@ require.config({
       deps: ['jquery']
     },
     datepickerzh:{
+      deps:['jquery']
+    },
+    uploadify:{
       deps:['jquery']
     }
   }

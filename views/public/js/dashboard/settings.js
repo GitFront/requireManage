@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/8/17.
  */
-define(['jquery','template','uploadify','datepicker','datepickerzh'],function ($,template,upload,datepicker){
+define(['jquery','template','uploadify','datepicker','datepickerzh','region'],function ($,template,upload,datepicker,datepickerzh,region){
     // 发送请求，获取数据，渲染页面
    $.ajax({
      url:'/api/teacher/profile',
@@ -33,6 +33,11 @@ define(['jquery','template','uploadify','datepicker','datepickerzh'],function ($
          $('input[name=tc_join_date],input[name=tc_birthday]').datepicker({
            format:'yyyy/mm/dd',
            language:'zh-CN'
+         });
+
+         // 三级联动模块插件的使用
+         $('#region').region({
+           url:'/views/public/assets/jquery-region/region.json'  // 配置数据信息
          });
        }
      }

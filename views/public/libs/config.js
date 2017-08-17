@@ -10,9 +10,10 @@ require.config({
     'template': 'assets/artTemplate/template',
     'nprogress': 'assets/nprogress/nprogress',
     'form': 'assets/jquery-form/jquery.form',
-'datepicker':'assets/bootstrap-datepicker/js/bootstrap-datepicker',
-'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
-'uploadify':'assets/uploadify/jquery.uploadify',
+    'datepicker': 'assets/bootstrap-datepicker/js/bootstrap-datepicker',
+    'datepickerzh': 'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+    'uploadify': 'assets/uploadify/jquery.uploadify',
+    'region': 'assets/jquery-region/jquery.region',
 //      'common': 'js/common'
     'common': 'js/dashboard/common',
     'login': 'js/dashboard/login'
@@ -21,11 +22,11 @@ require.config({
     bootstrap: {
       deps: ['jquery']
     },
-    datepickerzh:{
-      deps:['jquery']
+    datepickerzh: {
+      deps: ['jquery']
     },
-    uploadify:{
-      deps:['jquery']
+    uploadify: {
+      deps: ['jquery']
     }
   }
 });

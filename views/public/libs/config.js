@@ -10,6 +10,8 @@ require.config({
     'template': 'assets/artTemplate/template',
     'nprogress': 'assets/nprogress/nprogress',
     'form': 'assets/jquery-form/jquery.form',
+'datepicker':'assets/bootstrap-datepicker/js/bootstrap-datepicker',
+'datepickerzh':'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
 //      'common': 'js/common'
     'common': 'js/dashboard/common',
     'login': 'js/dashboard/login'
@@ -17,6 +19,9 @@ require.config({
   shim: {
     bootstrap: {
       deps: ['jquery']
+    },
+    datepickerzh:{
+      deps:['jquery']
     }
   }
 });

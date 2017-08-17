@@ -49,7 +49,7 @@ define(['jquery', 'template','bootstrap'], function ($, template) {
       type:'post',
       data:{
         tc_id: $(this).parent().attr('data-id'),
-        tc_status:$(this).data('status')
+        tc_status:$(this).attr('data-status')
       },
       success:function (res){
         if(res.code==200){
@@ -59,7 +59,8 @@ define(['jquery', 'template','bootstrap'], function ($, template) {
           } else {
             _this.text('注 销');
           }
-          _this.attr('data-status',res.result.tc_status); //将返回来的状态值，重新赋值给按钮的data-status属性
+          //将返回来的状态值，重新赋值给按钮的data-status属性
+          _this.attr('data-status',res.result.tc_status);
           // 如果更新此属性的话，则此按钮无法正常切换
         }
 

@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/8/15.
  */
-define(['jquery','template'],function ($,template){
+define(['jquery','template','form'],function ($,template){
 
   // 这是编辑的功能  当跳转到当前页面的时候，页面上得显示当前讲师的信息
     var search = location.search; //"?tc_id=3&name=250&age=20&sex='男'"
@@ -35,6 +35,20 @@ define(['jquery','template'],function ($,template){
         }
       }
     });
-    
-    // 给按钮注册事件，保存上面编辑完了的数据
+
+    // 给按钮注册事件，保存上面编辑完了的数据   form
+    $('.teacher').on('click','.btnSave',function (){
+          $('form').ajaxSubmit({ //和ajax的用法是一模一样的，好处是不用自己手动获取表单中的数据值了，会自动 的帮我们获取到，然后进行提交
+            url:'/api/teacher/update',
+            type:'post',
+            success:function (info){
+               if(info.code == 200){
+                 alert('更新成功');
+                 location.href='/teacher/list';// 提交之后，要跳转到列表页面
+               }
+            }
+          })
+
+           return false;
+    })
 })

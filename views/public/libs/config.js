@@ -9,13 +9,14 @@ require.config({
     'bootstrap': 'assets/bootstrap/js/bootstrap.min',
     'template': 'assets/artTemplate/template',
     'nprogress': 'assets/nprogress/nprogress',
+    'form': 'assets/jquery-form/jquery.form',
 //      'common': 'js/common'
-    'common':'js/dashboard/common',
-    'login':'js/dashboard/login'
+    'common': 'js/dashboard/common',
+    'login': 'js/dashboard/login'
   },
   shim: {
-    bootstrap:{
-      deps:['jquery']
+    bootstrap: {
+      deps: ['jquery']
     }
   }
 });

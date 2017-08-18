@@ -60,7 +60,7 @@ define(['jquery','template','uploadify','datepicker','datepickerzh','region','ck
   $('.settings').on('click','.btnSave',function (){
     // $("#introduce").val(CKEDITOR.instances.introduce.getData());
     // 更新一遍数据
-    alert(6666);
+    // alert(6666);
     $("#tc_introduce").val(CKEDITOR.instances.tc_introduce.getData());
        $('form').ajaxSubmit({
           url:'/api/teacher/modify',
@@ -69,12 +69,11 @@ define(['jquery','template','uploadify','datepicker','datepickerzh','region','ck
             if(info.code ==200){
               alert('添加成功');
               location.href = '/teacher/list';
-            }
-          }
-
-       });
+            }//if
+          }//success
+       });//ajaxSubmit
        return false;
-  })
+  })//settings.on
 
 
 

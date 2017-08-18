@@ -14,7 +14,8 @@ require.config({
     'datepickerzh': 'assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
     'uploadify': 'assets/uploadify/jquery.uploadify',
     'region': 'assets/jquery-region/jquery.region',
-    'ckeditor':'assets/ckeditor/ckeditor',
+    'ckeditor': 'assets/ckeditor/ckeditor',
+    'utils': 'libs/utils',
 //      'common': 'js/common'
     'common': 'js/dashboard/common',
     'login': 'js/dashboard/login'
@@ -29,8 +30,8 @@ require.config({
     uploadify: {
       deps: ['jquery']
     },
-    ckeditor:{
-      exports:'CKEDITOR'
+    ckeditor: {
+      exports: 'CKEDITOR'
     }
   }
 });

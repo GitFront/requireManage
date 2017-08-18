@@ -1,0 +1,543 @@
+{
+  "code": 200,
+  "msg": "OK",
+  "result": {
+    "cs_id": "172",
+    "cs_cg_id": "0",
+    "cs_tc_id": "1",
+    "cs_name": "HTML6",
+    "tc_name": "前端学院",
+    "cs_brief": "",
+    "cs_tags": "",
+    "cs_cover": "",
+    "cs_cg_pid": 0,
+    "teacher": [
+      {
+        "tc_id": "1",
+        "tc_name": "前端学院"
+      },
+      {
+        "tc_id": "672",
+        "tc_name": "小白fgwerfscvxcv"
+      },
+      {
+        "tc_id": "673",
+        "tc_name": "前端学院同意他的风格"
+      },
+      {
+        "tc_id": "671",
+        "tc_name": "切克闹"
+      },
+      {
+        "tc_id": "669",
+        "tc_name": "练腰王大头"
+      },
+      {
+        "tc_id": "2",
+        "tc_name": "李清照"
+      },
+      {
+        "tc_id": "684",
+        "tc_name": "Yankee"
+      },
+      {
+        "tc_id": "688",
+        "tc_name": "车小生"
+      },
+      {
+        "tc_id": "685",
+        "tc_name": "小开"
+      },
+      {
+        "tc_id": "686",
+        "tc_name": ""
+      },
+      {
+        "tc_id": "687",
+        "tc_name": "漩涡鸣人"
+      },
+      {
+        "tc_id": "3",
+        "tc_name": "手撕鬼子王大头"
+      },
+      {
+        "tc_id": "4",
+        "tc_name": "提莫队长正在待命"
+      },
+      {
+        "tc_id": "6",
+        "tc_name": "小白最美"
+      },
+      {
+        "tc_id": "667",
+        "tc_name": "fdgf"
+      },
+      {
+        "tc_id": "7",
+        "tc_name": "比利大傻逼"
+      },
+      {
+        "tc_id": "8",
+        "tc_name": "西"
+      },
+      {
+        "tc_id": "9",
+        "tc_name": "西"
+      },
+      {
+        "tc_id": "10",
+        "tc_name": "209最帅"
+      },
+      {
+        "tc_id": "11",
+        "tc_name": "门"
+      },
+      {
+        "tc_id": "12",
+        "tc_name": "黄达浩"
+      },
+      {
+        "tc_id": "13",
+        "tc_name": "前端10期占领"
+      },
+      {
+        "tc_id": "16",
+        "tc_name": "iiiiiiiiiiiiii"
+      },
+      {
+        "tc_id": "23",
+        "tc_name": "从王大头的肾虚来看整个世界"
+      },
+      {
+        "tc_id": "17",
+        "tc_name": "著名呆呆王子王大头"
+      },
+      {
+        "tc_id": "18",
+        "tc_name": "11"
+      },
+      {
+        "tc_id": "19",
+        "tc_name": "世界名人录之王大头"
+      },
+      {
+        "tc_id": "20",
+        "tc_name": "12313"
+      },
+      {
+        "tc_id": "21",
+        "tc_name": "0000000000000000"
+      },
+      {
+        "tc_id": "22",
+        "tc_name": "卧槽 ttvh"
+      },
+      {
+        "tc_id": "24",
+        "tc_name": "我是比例着"
+      },
+      {
+        "tc_id": "25",
+        "tc_name": "前端学院"
+      },
+      {
+        "tc_id": "52",
+        "tc_name": "我的腰要断了"
+      },
+      {
+        "tc_id": "53",
+        "tc_name": "天下无敌"
+      },
+      {
+        "tc_id": "54",
+        "tc_name": "苍茫の帅哥"
+      },
+      {
+        "tc_id": "55",
+        "tc_name": "dontmove"
+      },
+      {
+        "tc_id": "56",
+        "tc_name": "小小王汉脚"
+      },
+      {
+        "tc_id": "57",
+        "tc_name": "1234567890abc"
+      },
+      {
+        "tc_id": "58",
+        "tc_name": "王大头的爱与恨"
+      },
+      {
+        "tc_id": "59",
+        "tc_name": "王大头恩仇录"
+      },
+      {
+        "tc_id": "60",
+        "tc_name": "传智播客"
+      },
+      {
+        "tc_id": "665",
+        "tc_name": "1234567890-]"
+      },
+      {
+        "tc_id": "61",
+        "tc_name": "小白146578912233"
+      },
+      {
+        "tc_id": "62",
+        "tc_name": "王老吉三生三世1111111"
+      },
+      {
+        "tc_id": "63",
+        "tc_name": "小江江"
+      },
+      {
+        "tc_id": "64",
+        "tc_name": "sb"
+      },
+      {
+        "tc_id": "66",
+        "tc_name": "扶妖（腰）大师王大头"
+      },
+      {
+        "tc_id": "67",
+        "tc_name": "马克波罗傻逼wqrqwev "
+      },
+      {
+        "tc_id": "68",
+        "tc_name": "250"
+      },
+      {
+        "tc_id": "69",
+        "tc_name": "LE3qaq"
+      },
+      {
+        "tc_id": "70",
+        "tc_name": "韩梅梅1ewfwerqwe"
+      },
+      {
+        "tc_id": "71",
+        "tc_name": "前端学院123"
+      },
+      {
+        "tc_id": "72",
+        "tc_name": "熟232323232323"
+      },
+      {
+        "tc_id": "73",
+        "tc_name": "chenhu"
+      },
+      {
+        "tc_id": "75",
+        "tc_name": "哈哈"
+      },
+      {
+        "tc_id": "77",
+        "tc_name": "dfd111"
+      },
+      {
+        "tc_id": "78",
+        "tc_name": "Lee P111"
+      },
+      {
+        "tc_id": "79",
+        "tc_name": "最强中单"
+      },
+      {
+        "tc_id": "81",
+        "tc_name": "明天不上课111"
+      },
+      {
+        "tc_id": "82",
+        "tc_name": "aaaaaaaaa"
+      },
+      {
+        "tc_id": "83",
+        "tc_name": "明天不上课aaaa"
+      },
+      {
+        "tc_id": "84",
+        "tc_name": "明天666"
+      },
+      {
+        "tc_id": "87",
+        "tc_name": "妹"
+      },
+      {
+        "tc_id": "88",
+        "tc_name": "嘣啵霸"
+      },
+      {
+        "tc_id": "681",
+        "tc_name": ""
+      },
+      {
+        "tc_id": "90",
+        "tc_name": "前端学院"
+      },
+      {
+        "tc_id": "91",
+        "tc_name": "厉害了91999"
+      },
+      {
+        "tc_id": "93",
+        "tc_name": "123"
+      },
+      {
+        "tc_id": "94",
+        "tc_name": "123"
+      },
+      {
+        "tc_id": "98",
+        "tc_name": "张三"
+      },
+      {
+        "tc_id": "99",
+        "tc_name": "张三"
+      },
+      {
+        "tc_id": "100",
+        "tc_name": "333先定一个小目标"
+      },
+      {
+        "tc_id": "689",
+        "tc_name": "小白"
+      },
+      {
+        "tc_id": "690",
+        "tc_name": "俊哥好帅"
+      },
+      {
+        "tc_id": "691",
+        "tc_name": "同原亮司"
+      },
+      {
+        "tc_id": "692",
+        "tc_name": "yellow"
+      },
+      {
+        "tc_id": "693",
+        "tc_name": "哈啊"
+      },
+      {
+        "tc_id": "694",
+        "tc_name": "Lee Poo"
+      },
+      {
+        "tc_id": "695",
+        "tc_name": "前端"
+      },
+      {
+        "tc_id": "696",
+        "tc_name": "sdfsdf"
+      },
+      {
+        "tc_id": "697",
+        "tc_name": "自行车"
+      },
+      {
+        "tc_id": "698",
+        "tc_name": "本地佬"
+      },
+      {
+        "tc_id": "699",
+        "tc_name": "哈哈哈"
+      },
+      {
+        "tc_id": "700",
+        "tc_name": "studyit"
+      },
+      {
+        "tc_id": "716",
+        "tc_name": "唐泽雪惠"
+      },
+      {
+        "tc_id": "701",
+        "tc_name": "小可爱"
+      },
+      {
+        "tc_id": "702",
+        "tc_name": "得到"
+      },
+      {
+        "tc_id": "703",
+        "tc_name": "幸福的碎片"
+      },
+      {
+        "tc_id": "704",
+        "tc_name": "fatelils"
+      },
+      {
+        "tc_id": "705",
+        "tc_name": "刘清华"
+      },
+      {
+        "tc_id": "706",
+        "tc_name": "谢一筒"
+      },
+      {
+        "tc_id": "707",
+        "tc_name": "李白"
+      },
+      {
+        "tc_id": "708",
+        "tc_name": "谢二筒"
+      },
+      {
+        "tc_id": "709",
+        "tc_name": "eqe"
+      },
+      {
+        "tc_id": "710",
+        "tc_name": "ee"
+      },
+      {
+        "tc_id": "670",
+        "tc_name": "黄楚华"
+      },
+      {
+        "tc_id": "662",
+        "tc_name": "关羽"
+      },
+      {
+        "tc_id": "663",
+        "tc_name": "前端小白"
+      },
+      {
+        "tc_id": "678",
+        "tc_name": "231111111"
+      },
+      {
+        "tc_id": "664",
+        "tc_name": "关羽"
+      },
+      {
+        "tc_id": "661",
+        "tc_name": "又添加了一个"
+      },
+      {
+        "tc_id": "666",
+        "tc_name": "110"
+      },
+      {
+        "tc_id": "668",
+        "tc_name": "王大头"
+      },
+      {
+        "tc_id": "674",
+        "tc_name": "前端学院打扰对方"
+      },
+      {
+        "tc_id": "675",
+        "tc_name": "坎坎坷坷"
+      },
+      {
+        "tc_id": "676",
+        "tc_name": "坎坎坷坷"
+      },
+      {
+        "tc_id": "683",
+        "tc_name": "请"
+      },
+      {
+        "tc_id": "677",
+        "tc_name": "坎坎坷坷"
+      },
+      {
+        "tc_id": "682",
+        "tc_name": ""
+      },
+      {
+        "tc_id": "679",
+        "tc_name": "112"
+      },
+      {
+        "tc_id": "680",
+        "tc_name": "叼毛"
+      },
+      {
+        "tc_id": "711",
+        "tc_name": "www"
+      },
+      {
+        "tc_id": "712",
+        "tc_name": ""
+      },
+      {
+        "tc_id": "713",
+        "tc_name": "22222222222222"
+      },
+      {
+        "tc_id": "714",
+        "tc_name": "前端学院"
+      },
+      {
+        "tc_id": "715",
+        "tc_name": "1213213"
+      },
+      {
+        "tc_id": "717",
+        "tc_name": "前端"
+      },
+      {
+        "tc_id": "718",
+        "tc_name": "小白"
+      },
+      {
+        "tc_id": "719",
+        "tc_name": "哈市"
+      },
+      {
+        "tc_id": "660",
+        "tc_name": "新添加的"
+      }
+    ],
+    "category": {
+      "top": [
+        {
+          "cg_id": "1",
+          "cg_name": "前端开发"
+        },
+        {
+          "cg_id": "2",
+          "cg_name": "后端开发"
+        },
+        {
+          "cg_id": "3",
+          "cg_name": "数据库"
+        },
+        {
+          "cg_id": "4",
+          "cg_name": "视觉设计"
+        },
+        {
+          "cg_id": "15",
+          "cg_name": "移动开发"
+        },
+        {
+          "cg_id": "16",
+          "cg_name": "云计算&大数据"
+        },
+        {
+          "cg_id": "17",
+          "cg_name": "运维&测试"
+        },
+        {
+          "cg_id": "31",
+          "cg_name": ""
+        },
+        {
+          "cg_id": "32",
+          "cg_name": ""
+        },
+        {
+          "cg_id": "33",
+          "cg_name": ""
+        }
+      ],
+      "childs": []
+    }
+  },
+  "time": 1503038964
+}

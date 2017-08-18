@@ -26,6 +26,7 @@
     <?php include '/views/common/script.html'?>
     <script type="template/html" id="tpl_tc_profile">
         <form action="" class="form-horizontal">
+            <input type="hidden" name="tc_id" value="{{tc_id}}">
             <div class="form-group">
                 <label for="" class="col-md-3 control-label">姓名</label>
                 <div class="col-md-5">
@@ -45,7 +46,7 @@
             <div class="form-group">
                 <label for="" class="col-md-3 control-label">昵称</label>
                 <div class="col-md-5">
-                    <input type="text" value="{{tc_roster}}" class="form-control input-sm">
+                    <input type="text" name="tc_roster" value="{{tc_roster}}" class="form-control input-sm">
                 </div>
             </div>
             <div class="form-group">
@@ -68,13 +69,13 @@
             <div class="form-group">
                 <label for="" class="col-md-3 control-label">籍贯</label>
                 <div class="col-md-5" id="region">
-                    <select name="" id="p" data-id="{{tc_province}}" class="form-control input-sm">
+                    <select name="tc_province" id="p" data-id="{{tc_province}}" class="form-control input-sm">
                         <option value="">请选择省</option>
                     </select>
-                    <select name="" id="c" data-id="{{tc_city}}" class="form-control input-sm">
+                    <select name="tc_city" id="c" data-id="{{tc_city}}" class="form-control input-sm">
                         <option value="">请选择市</option>
                     </select>
-                    <select name="" id="d"  data-id="{{tc_district}}" class="form-control input-sm">
+                    <select name="tc_district" id="d"  data-id="{{tc_district}}" class="form-control input-sm">
                         <option value="">请选择区</option>
                     </select>
                 </div>
@@ -105,7 +106,7 @@
             </div>
             <div class="form-group">
                 <div class="col-md-8">
-                    <a href="./course_add_step2.html" class="btn btn-success btn-sm pull-right">保 存</a>
+                    <button class="btnSave btn btn-success btn-sm pull-right">保 存</button>
                     <a href="./repass.html" class="btn btn-link btn-sm pull-right">更改密码？</a>
                 </div>
             </div>

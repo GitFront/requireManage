@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/8/17.
  */
-define(['jquery','template','uploadify','datepicker','datepickerzh','region','ckeditor'],function ($,template,upload,datepicker,datepickerzh,region,CKEDITOR){
+define(['jquery','template','uploadify','datepicker','datepickerzh','region','ckeditor','form'],function ($,template,upload,datepicker,datepickerzh,region,CKEDITOR){
     // 发送请求，获取数据，渲染页面
    $.ajax({
      url:'/api/teacher/profile',
@@ -56,6 +56,25 @@ define(['jquery','template','uploadify','datepicker','datepickerzh','region','ck
      }
    });
 
+   // 给保存按钮注册事件，向服务器发送数据，提交当前的信息
+  $('.settings').on('click','.btnSave',function (){
+    // $("#introduce").val(CKEDITOR.instances.introduce.getData());
+    // 更新一遍数据
+    alert(6666);
+    $("#tc_introduce").val(CKEDITOR.instances.tc_introduce.getData());
+       $('form').ajaxSubmit({
+          url:'/api/teacher/modify',
+         type:'post',
+          success:function (info){
+            if(info.code ==200){
+              alert('添加成功');
+              location.href = '/teacher/list';
+            }
+          }
+
+       });
+       return false;
+  })
 
 
 

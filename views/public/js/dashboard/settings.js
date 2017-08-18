@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/8/17.
  */
-define(['jquery','template','uploadify','datepicker','datepickerzh','region'],function ($,template,upload,datepicker,datepickerzh,region){
+define(['jquery','template','uploadify','datepicker','datepickerzh','region','ckeditor'],function ($,template,upload,datepicker,datepickerzh,region,CKEDITOR){
     // 发送请求，获取数据，渲染页面
    $.ajax({
      url:'/api/teacher/profile',
@@ -39,7 +39,24 @@ define(['jquery','template','uploadify','datepicker','datepickerzh','region'],fu
          $('#region').region({
            url:'/views/public/assets/jquery-region/region.json'  // 配置数据信息
          });
+
+         // 富文本编辑器的使用
+         CKEDITOR.replace('tc_introduce',{
+           toolbarGroups:[
+             { name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
+             { name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
+             { name: 'links' },
+             { name: 'insert' },
+             { name: 'forms' },
+             { name: 'tools' },
+             { name: 'document',    groups: [ 'mode', 'document', 'doctools' ] }
+           ]
+         });
        }
      }
-   })
+   });
+
+
+
+
 })

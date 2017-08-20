@@ -11,7 +11,8 @@ define(['jquery', 'template', 'utils', 'bootstrap', 'form'], function ($, templa
 
     var obj = {
       title:'课时添加',
-      saveTextBtn :'添加'
+      saveTextBtn :'添加',
+      actionUrl:'/api/course/chapter/add'
     };
     var htmlStr = template('tpl_cs_modal',obj);
     $('#tpl_modal').html(htmlStr);
@@ -20,10 +21,11 @@ define(['jquery', 'template', 'utils', 'bootstrap', 'form'], function ($, templa
   });
 
   // 3.给保存按钮注册事件
-  $('.btnSave').on('click', function () {
+  // $('.btnSave').on('click', function () {
+  $('#tpl_modal').on('click','.btnSave', function () {
     var ct_is_free = Number($('input[name=ct_is_free]').prop('checked'));
-    $('form').ajaxSubmit({
-      url: '/api/course/chapter/add',
+    $('form').ajaxSubmit({    // ajaxSubmit这个按钮，如果你提供了url的话，则是以url进行提交，如果没有url，则是以表单中的action中的接口进行提交
+      // url: '/api/course/chapter/add',
       type: 'post',
       data: {
         // 如果在表单里面无法获取的数据，需要我们在这个地方，手动添加
@@ -49,8 +51,11 @@ define(['jquery', 'template', 'utils', 'bootstrap', 'form'], function ($, templa
       },
       success: function (info) {
         if(info.code==200){
+          // js是动态的弱类型语言   所谓的弱类型，就是指js中对变量中存储的数据类型要求不严格
+          // 动态  可以给对象随时的添加属性和方法  js中的数组是动态可变的
           info.result.title = '编辑课时';
           info.result.saveTextBtn = '保 存';
+          info.result.actionUrl = '/api/course/chapter/modify';
           var htmlStr = template('tpl_cs_modal',info.result);
           $('#tpl_modal').html(htmlStr);
 

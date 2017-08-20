@@ -45,7 +45,8 @@
                     <h4 class="modal-title">{{title}}</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="" class="form-horizontal">
+                    <form action="{{actionUrl}}" class="form-horizontal">
+                    <input type="hidden" value="{{ct_id}}" name="ct_id">
                         <div class="form-group">
                             <label for="" class="col-md-2 control-label">标题</label>
                             <div class="col-md-6">
@@ -96,7 +97,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer" >
                     <button type="button" class="btn btn-link btn-sm" data-dismiss="modal">取消</button>
                     <button type="button"  class="btnSave btn btn-success btn-sm"> {{saveTextBtn}} </button>
                 </div>

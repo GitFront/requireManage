@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>学IT - 后台管理系统</title>
     <?php include '/views/common/css.html'?>
+    <link rel="stylesheet" href="/views/public/assets/Jcrop/css/Jcrop.css">
+    <style>
+        .jcrop-thumb{
+            left:0;
+            top: 0;
+        }
+    </style>
 </head>
 <body>
     <!-- 侧边栏 -->
@@ -78,7 +85,8 @@
                         <button id="btnSelect" class=" btn btn-success btn-sm">选择图片</button>
                     </div>
                     <div class="col-md-2">
-                        <button id="btnJcrop" class="btn btn-warning btn-sm" disabled>裁切图片</button>
+                        <button id="btnJcrop"  class="btn btn-warning btn-sm" {{if !cs_cover_original}}disabled{{/if}}>裁切图片</button>
+                        
                     </div>
                 </div>
             </div>

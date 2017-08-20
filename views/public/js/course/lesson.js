@@ -21,7 +21,7 @@ define(['jquery', 'template', 'utils', 'bootstrap', 'form'], function ($, templa
   });
 
   // 3.给保存按钮注册事件
-  // $('.btnSave').on('click', function () {
+  // $('.btnSave').on('click', function () { // 之前是直接注册的事件，但是现在的按钮是通过模态框渲染出来的了，所以得通过事件委托的方式来注册事件了
   $('#tpl_modal').on('click','.btnSave', function () {
     var ct_is_free = Number($('input[name=ct_is_free]').prop('checked'));
     $('form').ajaxSubmit({    // ajaxSubmit这个按钮，如果你提供了url的话，则是以url进行提交，如果没有url，则是以表单中的action中的接口进行提交

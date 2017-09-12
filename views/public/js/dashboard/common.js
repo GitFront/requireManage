@@ -7,7 +7,7 @@
 	// 	$(this).next().slideToggle();
 	// });
 
-	define(['jquery','cookie','template'],function ($,ck,template){
+	define(['jquery','cookie','template','nprogress'],function ($,ck,template,NProgress){
     // 验证是否登陆，如果没有登陆的话，则跳转到登陆页面
     // 登陆
     if(!$.cookie('PHPSESSID')&&location.pathname!='/login'){
@@ -36,6 +36,17 @@
      $('.navs a+ul').prev().on('click',function (){
           // 这是给a标签注册的事件
        $(this).next().slideToggle();
-     })
+     });
+
+     NProgress.start();
+     NProgress.done();
+
+    $(document).ajaxStart(function (){
+      NProgress.start();
+    });
+    $(document).ajaxStop(function (){
+      NProgress.done();
+    })
+
 	})
 

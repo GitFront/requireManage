@@ -12,7 +12,7 @@
 	//  index.php后面的地址信息，是存在于PATH_INFO这个属性当中的
 		//echo $_SERVER['PATH_INFO'];
 
-			//var_dump($_SERVER);
+			
 		// 在浏览器中实现一个简化输入的访问方式 比如：
 		// studyit.com/index.php/views/dashboard/index
 		// studyit.com/index.php/views/index
@@ -20,6 +20,7 @@
 		// studyit.com/index.php/index
    $path = '';
    if(array_key_exists('PATH_INFO',$_SERVER)){
+	   var_dump($_SERVER);
    // 判断某个数组当中是否有某个属性  array_key_exists()
    	// 用户输入的内容里面有index.php后面的信息的时候，可以用如下的方式进行判断
    	 $path = $_SERVER["PATH_INFO"];   //   /views/dashboard/index
